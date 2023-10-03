@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav {
+    background-color: brown;
+    color: aquamarine;
+    height: 65px;
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+    padding: 0 19px;
+    font-family: 'Pixelify Sans', cursive;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  .gameson {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;  
+  }
+  
+  .container {
+    display: grid;
+    grid-template-rows: repeat(3, minmax(10vw, 1fr));  
+    grid-template-columns: repeat(3, minmax(10vw, 1fr));  
+    font-family: 'Pixelify Sans', cursive;
+    position: relative;
+  }
+  
+  .box {
+    border: 3px solid black;
+    font-size: 7vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box:hover {
+    border: 3px solid black;
+    font-size: 7vw;
+    background-color: rgb(202, 234, 234);
+  }
+  .info{
+    font-size: 20px;
+  }
+  .gameinfo {
+    padding: 0 33px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .gameinfo h1 {
+    font-size: 3rem;
+  }
+  
+  .imgbox img {
+    width: 0;
+    transition: width 1s ease-in-out;
+  }
+  
+  .br-0 {
+    border-right: 0;
+  }
+  
+  .bl-0 {
+    border-left: 0;
+  }
+  
+  .bt-0 {
+    border-top: 0;
+  }
+  
+  .bb-0 {
+    border-bottom: 0;
+  }
+  
+  #reset {
+    margin: 0 23px;
+    padding: 2px 19px;
+    background: rgb(213, 132, 163);
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+  }
+  
+  .info {
+    font-size: 30px;
+    padding: 12px;
+  }
+  
+ 
+
+
+
+  @media screen and (max-width: 800px) {
+    .gameson {
+      flex-wrap: wrap;
+    }
+    .gameinfo {
+      margin-top: 34px;
+    }
+    .gameinfo h1 {
+      font-size: 1.6rem;
+    }
+    .container {
+      grid-template-rows: repeat(3, minmax(20vw, 1fr)); 
+      grid-template-columns: repeat(3, minmax(20vw, 1fr));  
+    }
+  }
+  
+  
